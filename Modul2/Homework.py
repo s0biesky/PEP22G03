@@ -1,3 +1,5 @@
+print(False or (False and True) or True)
+#
 # Exercițiul 1
 #
 parola = "Passme1n"
