@@ -43,3 +43,40 @@ else:
         else:
             print("Nu ati introdus o valoare corecta.")
 
+
+
+# 2
+
+lst = []
+while True:
+    try:
+        numar = input("Introduceti un numar (cand v-ati saturat, apasati q): ")
+        if numar == 'q':
+            break
+        numar = int(numar)
+        lst.append(numar)
+    except ValueError:
+        continue
+
+# Suma numarului de pe pozitia 1 si 2.
+try:
+    print("O sa adaugam numarul 2 si 3.")
+    print("lst[1] + lst[2] = ", lst[1] + lst[2])
+except IndexError:
+    pass
+
+# Divizia primelor 2 numere din lista
+try:
+    print("Divizia primelor 2 numere din lista este: ")
+    print("lst[0] / lst[1] = ", lst[0] / lst[1])
+except IndexError:
+    pass
+except ZeroDivisionError:
+    pass
+# Suma tuturor numerelor din lista
+sum = 0
+for i in lst:
+    sum += i
+print("Suma tuturor numerelor din lista este: ", sum)
+
+# Eu asta am inteles ca trebuie facut ¯\_(ツ)_/¯
